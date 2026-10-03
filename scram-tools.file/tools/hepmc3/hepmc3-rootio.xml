@@ -1,0 +1,6 @@
+<tool revision="1">
+  <lib name="HepMC3rootIO"/>
+  <use name="hepmc3"/>
+  <use name="rootcore"/>
+  <use name="rootrio"/>
+</tool>

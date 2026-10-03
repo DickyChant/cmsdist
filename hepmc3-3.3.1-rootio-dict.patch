@@ -1,0 +1,35 @@
+--- a/rootIO/include/LinkDef.hh
++++ b/rootIO/include/LinkDef.hh
+@@ -12,16 +12,6 @@
+ #pragma link C++ class HepMC3::Units+;
+ #pragma link C++ class HepMC3::Setup+;
+ 
+-/* To generate dictionaries for compatibility with HepMC3.0*/
+-#pragma link C++ typedef HepMC::GenEventData+;
+-#pragma link C++ typedef HepMC::GenRunInfoData+;
+-#pragma link C++ typedef HepMC::GenParticleData+;
+-#pragma link C++ typedef HepMC::GenVertexData+;
+-#pragma link C++ typedef std::vector<HepMC::GenParticleData>+;
+-#pragma link C++ typedef std::vector<HepMC::GenVertexData>+;
+-#pragma link C++ typedef HepMC::FourVector+;
+-#pragma link C++ typedef HepMC::Units+;
+-#pragma link C++ typedef HepMC::Setup+;
+ 
+ 
+ #endif
+--- a/rootIO/include/rootIO_Classes.hh
++++ b/rootIO/include/rootIO_Classes.hh
+@@ -1,13 +1,2 @@
+ #include "HepMC3/Data/GenEventData.h"
+ #include "HepMC3/Data/GenRunInfoData.h"
+-/* To generate dictionaries for compatibility with HepMC3.0*/
+-namespace HepMC
+-{
+-typedef HepMC3::GenEventData GenEventData;
+-typedef HepMC3::GenRunInfoData GenRunInfoData ;
+-typedef HepMC3::GenParticleData GenParticleData ;
+-typedef HepMC3::GenVertexData GenVertexData ;
+-typedef HepMC3::FourVector FourVector ;
+-typedef HepMC3::Units Units ;
+-typedef HepMC3::Setup Setup ;
+-}
